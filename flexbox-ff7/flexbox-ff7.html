@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/bg-full.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+        }
+
+        .flex-box {
+            width: 1400px;
+            height: 700px;
+            background: #aaa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border: 0.5px solid #aaa;
+
+        }
+
+        .flex-item {
+            /* background: black; */
+            flex-basis: 50%;
+            width: 50%;
+            color: white;
+
+        }
+
+        .flex-left {
+            flex-basis: 100%;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: 'arial';
+        }
+
+        p {
+            font-size: 20px;
+            width: 400px;
+        }
+
+        .group1 {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            margin-left: 3%;
+            margin-top: 10%;
+        }
+
+        .group2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 45%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <div class="flex-item flex-left"
+            style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/main.jpg); background-size: 100% 100%;">
+            <img src="./images/ps4-ff7.png" width="250px">
+            <div class="group">
+                <h1>AVAILABLE NOW</h1>
+                <p style="width: 500px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non voluptates error,
+                    laboriosam veniam
+                    assumenda voluptatum unde consequuntur rerum est dicta velit labore, praesentium obcaecati saepe.
+                    Quis
+                    nobis facilis facere eveniet?</p>
+            </div>
+
+        </div>
+        <div class="flex-item"
+            style=" background: url('./images/cloud.png'); background-size: 290px; background-repeat: no-repeat; background-position: 100% 100%;">
+            <div class="group1">
+                <h1>Cloud</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non voluptates error, laboriosam veniam
+                    assumenda voluptatum unde consequuntur rerum est dicta velit labore, praesentium obcaecati saepe.
+                    Quis
+                    nobis facilis facere eveniet?</p>
+            </div>
+
+        </div>
+        <div class="flex-item"
+            style="background: black url('./images/tifa.png'); background-size: 300px; background-repeat: no-repeat; background-position: 5% 30px;">
+            <div class="background-tifa">
+                <div class="group2">
+                    <h1>Tifa</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non voluptates error, laboriosam veniam
+                        assumenda voluptatum unde consequuntur rerum est dicta velit labore, praesentium obcaecati
+                        saepe.
+                        Quis
+                        nobis facilis facere eveniet?</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
